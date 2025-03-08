@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>С 8 Марта! 💫</title>
+    <style>
+        body {
+            background: linear-gradient(45deg, #0f0c29, #302b63, #24243e);
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            padding: 40px;
+            min-height: 100vh;
+            color: #fff;
+            animation: pulse 8s infinite alternate;
+        }
+
+        @keyframes pulse {
+            0% { background-position: 0% 50%; }
+            100% { background-position: 100% 50%; }
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 20px;
+            padding: 40px;
+            backdrop-filter: blur(12px);
+            border: 2px solid #8a2be2;
+            box-shadow: 0 0 50px rgba(138, 43, 226, 0.3);
+        }
+
+        .photo-container {
+            max-width: 500px;
+            margin: 20px auto;
+            border-radius: 15px;
+            overflow: hidden;
+            transition: transform 0.3s;
+            position: relative;
+            border: 3px solid #9400d3;
+        }
+
+        .photo-container:hover {
+            transform: scale(1.03) rotate(1deg);
+        }
+
+        .photo-container::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            box-shadow: inset 0 0 50px rgba(148, 0, 211, 0.3);
+        }
+
+        h1 {
+            font-size: 2.5em;
+            text-shadow: 0 0 20px #8a2be2;
+            margin: 25px 0;
+            background: linear-gradient(45deg, #9400d3, #4b0082);
+        }
+
+        .message {
+            font-size: 1.2em;
+            line-height: 1.7;
+            margin: 30px 0;
+            padding: 25px;
+            background: rgba(148, 0, 211, 0.1);
+            border-radius: 15px;
+            position: relative;
+        }
+
+        .neon {
+            font-size: 40px;
+            animation: glow 1.5s infinite alternate;
+        }
+
+        @keyframes glow {
+            from { text-shadow: 0 0 10px #8a2be2; }
+            to { text-shadow: 0 0 30px #ff00ff; }
+        }
+
+        .equalizer {
+            height: 5px;
+            background: linear-gradient(90deg, #8a2be2, #ff00ff);
+            animation: equalize 2s infinite;
+            margin: 20px 0;
+        }
+
+        @keyframes equalize {
+            0%, 100% { height: 5px; }
+            50% { height: 30px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="photo-container">
+            <img src="photo_2024-12-19_20-27-22.jpg" alt="Энергия музыки">
+        </div>
+
+        <h1>💫 С 8 Марта, Электронная Королева! 💫</h1>
+        
+        <div class="message">
+            <p>
+                "Твой ритм заряжает вселенную!<br>
+                Пусть каждый день будет:<br>
+                🎧 Наполнен битами счастья<br>
+                💿 Записан на золотой диск успеха<br>
+                🌌 Оцифрован в облаке любви!"
+            </p>
+            <div class="neon">🎶💃✨</div>
+            <div class="equalizer"></div>
+        </div>
+
+        <div style="margin: 40px 0;">
+            <iframe style="border-radius:12px; border: 2px solid #8a2be2;" 
+                    src="https://open.spotify.com/embed/track/2YcvBJdTWQ1J7qpUA6Fdm0?utm_source=generator" 
+                    width="100%" 
+                    height="352" 
+                    frameborder="0" 
+                    allowfullscreen="" 
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+                    loading="lazy">
+            </iframe>
+        </div>
+    </div>
+</body>
+</html>
